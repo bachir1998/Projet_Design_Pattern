@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="623.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.MainController">
+   <children>
+      <GridPane layoutX="31.0" layoutY="180.0" prefHeight="65.0" prefWidth="244.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="84.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="166.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Fichier :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Date :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Heure min :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="meetingAttendeeList.csv" GridPane.columnIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9 Février 2021" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="09:56:35" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:51:48" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Label text="Heure max :" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="25.0" layoutY="251.0" prefHeight="30.0" prefWidth="406.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="196.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="210.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="100.0" startX="-100.0" />
+            <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="25.0" layoutY="284.0" prefHeight="87.0" prefWidth="397.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="307.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Libellé :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Heure début :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Heure fin :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="LibelleTextField" prefHeight="25.0" prefWidth="278.0" GridPane.columnIndex="1" />
+            <DatePicker fx:id="dateheuredebut" prefHeight="25.0" prefWidth="314.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dateheurefin" prefHeight="25.0" prefWidth="301.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="25.0" layoutY="380.0" prefHeight="19.0" prefWidth="397.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="100.0" startX="-100.0" />
+            <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="25.0" layoutY="399.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="101.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="20.0" prefWidth="108.0" text="Trier la sortie :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="trieidradiobutton" mnemonicParsing="false" text="par id" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="triesortie" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="trienomradiobutton" mnemonicParsing="false" text="par nom" toggleGroup="$triesortie" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+
+               </font></RadioButton>
+         </children>
+      </GridPane>
+      <GridPane layoutX="304.0" layoutY="401.0" prefHeight="87.0" prefWidth="118.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Générer, en sortie :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="checkboxName" mnemonicParsing="false" text="sans nom" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkboxId" mnemonicParsing="false" text="sans id" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkboxPlanninng" mnemonicParsing="false" text="sans planning" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="26.0" layoutY="492.0" prefHeight="17.0" prefWidth="397.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="100.0" startX="-100.0" />
+            <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="166.0" layoutY="509.0" prefHeight="30.0" prefWidth="132.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane layoutY="560.0" prefHeight="56.0" prefWidth="463.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="184.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="196.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="4.0" prefWidth="83.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="100.0" startX="-100.0" />
+            <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" />
+            <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" />
+            <Line endX="-17.707107543945312" endY="-0.2071068286895752" startX="-100.0" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="166.0" layoutY="521.0" mnemonicParsing="false" onAction="#sayHelloWorld" prefHeight="46.0" prefWidth="132.0" text="Générer la sortie">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="26.0" prefHeight="164.0" prefWidth="397.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fx:id="dragfile" arcHeight="5.0" arcWidth="5.0" fill="#f9fafc" height="153.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" stroke="BLACK" strokeType="INSIDE" width="397.0" GridPane.rowIndex="1" />
+            <Label fx:id="labelfilename" text="Filename" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
