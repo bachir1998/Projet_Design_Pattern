@@ -7,7 +7,7 @@ Membre du groupe
 
 1) ALLEGOU Bachi
 2) SIDIBE Kadiatou
-3) VANIE Jean-Marc
-4)GUEYE Bassirou
+3) VANIE Jean-Marc 
+4) GUEYE Bassirou
 5) YAHYA BEY Sami
 6) TRAORE Abdoul-Karym
